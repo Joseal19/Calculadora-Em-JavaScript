@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Calculadora</title>
+</head>
+<body>
+  <div class="bordaCalcu">
+    <h1>Calculadora</h1>
+    <div class="bordaVisor">
+      <p id="calcVisor"></p>
+    </div>
+    <div class="buttons">
+      <section class="buttonsLinha1">
+        <input type="button" value="7" onclick="insere(7)"></input>
+        <input type="button" value="8" onclick="insere(8)"></input>
+        <input type="button" value="9" onclick="insere(9)"></input>
+        <input type="reset"  value="*" onclick="insere('*')"></input>
+        <input type="button" value="C" onclick="clean()"></input>
+      </section>
+      <section class="buttonsLinha2">
+        <input type="button" value="4" onclick="insere(4)"></input>
+        <input type="button" value="5" onclick="insere(5)"></input>
+        <input type="button" value="6" onclick="insere(6)"></input>
+        <input type="button" value="-" onclick="insere('-')"></input>
+        <input type="button" value="<" onclick="back()"></input>
+      </section>
+      <section class="buttonsLinha3">
+        <input type="button" value="1" onclick="insere(1)"></input>
+        <input type="button" value="2" onclick="insere(2)"></input>
+        <input type="button" value="3" onclick="insere(3)"></input>
+        <input type="button" value="+" onclick="insere('+')"></input>
+        <input type="button" value="=" onclick="calcular()"></input>        
+      </section>
+      <section class="buttonsLinha4">
+        <input type="button" class="zero" value="0" onclick="insere(0)"></input>
+        <input type="button" value="."  onclick="insert('.')"></input>        
+      </section>
+    </div>
+  </div>
+  <script src="assets/javascript/script.js"></script>
+</body>
+</html>
